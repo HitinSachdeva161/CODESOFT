@@ -1,0 +1,304 @@
+
+.body
+{
+    padding: 0px;
+    margin: 0px;
+}
+#header
+{
+    background-image:url(images/hero-bg.png);
+    background-size: cover;
+    height: 845px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+navbar #logo
+{
+    list-style: none;
+}
+navbar #navs
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+#logo li
+{
+    display: inline-block;
+    color: white;
+}
+#navs li
+{
+    color: white;
+}
+
+#bigimg
+{    
+    padding-top: 65px;   
+}
+#bigpge
+{ 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#bigpge #carousel-write
+{
+    color: white;
+    
+}
+
+#ourserv
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#ourserv .card
+{
+    width: 360px;
+    background-color: #F8F8F9;
+    border: none;
+    box-shadow: 2px 2px 2px 2px;
+}
+#ourserv .card img
+{
+    width: 20%;
+}
+#about
+{
+    background-color: #170C65;
+    color: white;
+}
+#choose
+{
+   text-align: center;
+}
+#choose img
+{
+   width: 110px;
+    border-radius: 50%;
+    padding: 15px 15px;
+   border: 3px solid #170C65; 
+}
+#team
+{
+    background-color: #00204A;
+    text-align: center;
+}
+#team #outer-card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#team #outer-card .card
+{
+    width: 300px;
+    background-color: #002A62;
+}
+#team #outer-card .card img
+{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+#team #outer-card .card h4
+{
+    color: deepskyblue;
+}
+#team #outer-card .card p
+{
+    color: white;
+}
+.icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icons i
+{
+    color: white;
+}
+#custm #outer-card-2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#custm #outer-card-2 .card
+{
+    max-width: 500px;
+    box-shadow: 4px 4px 4px 4px;
+}
+#custm #outer-card-2 img
+{
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -65px;
+}
+
+#footer
+{
+    background-color: #170C65;
+    color: white;
+}
+#footer ul
+{
+    list-style: none;
+}
+#footer ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+#subs input
+{
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.card
+{
+    margin-bottom: 20px;
+}
+#navs li a
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    color: deepskyblue;
+}
+navbar #navs li a:hover
+{
+    color: deepskyblue;
+}
+#footer .row ul li a:hover
+{
+    color: deepskyblue;
+}
+@media only screen and ( max-width:991px )
+{
+    #ourserv
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+@media only screen and ( max-width:941px )
+{
+    #footer .row
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media only screen and ( max-width:1115px )
+{
+    #custm #outer-card-2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+@media only screen and ( max-width:676px )
+{
+    #team #outer-card
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+@media only screen and ( max-width:731px )
+{
+    #about .row .col-sm-5
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    #about .row img
+    {
+        width: 200px;
+        
+    }
+}
+@media only screen and ( max-width:731px )
+{
+    navbar
+    {
+        display: flex;
+        flex-direction: column;
+        
+/*        font-size: 11px;*/
+    }
+    
+    navbar #navs 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+    }
+    #bigpge #carousel-write p
+    {
+        font-size: 12px;
+    }
+    
+}
+
+
+@keyframes float {
+              0% {
+                transform: translatey(0px);
+              }
+              50% {
+                transform: translatey(-20px);
+              }
+
+
+              100% {
+                transform: translatey(0px);
+              }
+            }
+            
+.carousel-inner img,#about img
+{
+    transform: translatey(0px);
+  animation: float 1s ease-in-out infinite;
+}
